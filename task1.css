@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    padding: 12px;
+}
+
+.navbar ul li:hover{
+    background-color: antiquewhite;
+}
+
+.poster {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://www.w3schools.com/w3images/parallax1.jpg');
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    padding:10px;
+    padding-inline: 15px;
+    background-color: black;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 50;
+    letter-spacing: 5px;
+}
+
+.about{
+    text-align: center;
+    opacity: 0.8;
+}
+
+.about h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 70px;
+    font-weight: 300;
+    color: grey;
+}
+
+.about h3{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: 300;
+    color: grey;
+    font-style: italic;
+}
+
+.about p{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-inline: 300px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.name{
+    display: flex;
+    opacity: 0.8;
+}
+
+.image{
+    flex: 1;
+}
+
+.image h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: rgb(50, 48, 48);
+    margin-left: 470px;
+    margin-top: 20px;
+}
+
+.ima{
+    height: 250px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left:300px ;
+}
+
+.discription{
+    flex: 1;
+}
+
+.discription p{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 300px;
+    margin-top: 20px;
+    line-height: 25px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.skills{
+    text-align: center;
+    opacity: 0.8;
+    padding-inline: 300px;
+}
+
+.skills h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(75, 73, 73);
+    margin-top: 40px;
+    font-weight: 200;
+}
+
+.skill{
+    text-align: left;
+    letter-spacing: 6px;
+}
+
+
+
