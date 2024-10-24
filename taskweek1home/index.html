@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="tablediv">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="6">Time Table</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="6">Hours</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+                <tr>
+                    <td id="science">Science</td>
+                    <td id="maths">Maths</td>
+                    <td id="science">Science</td>
+                    <td id="maths">Maths</td>
+                    <td id="art">Art</td>
+                </tr>
+                <tr>
+                    <td id="social">Social</td>
+                    <td id="hindi">Hindi</td>
+                    <td id="english">English</td>
+                    <td id="social">Social</td>
+                    <td id="sports">Sports</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Lunch</td>
+                </tr>
+                <tr>
+                    <td id="science">Science</td>
+                    <td id="maths">Maths</td>
+                    <td id="science">Science</td>
+                    <td id="maths">Maths</td>
+                    <td rowspan="2" id="projects">Projects</td>
+                </tr>
+                <tr>
+                    <td id="social">Social</td>
+                    <td id="hindi">Hindi</td>
+                    <td id="english">English</td>
+                    <td id="social">Social</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    
+    <!-- <div id="teacher-details" class="teacher-details"> -->
+    </div>
+
+    <script>
+        // Teacher details mapped to subjects
+        // const teacherDetails = {
+        //     science: { name: "Mr. Smith", email: "smith@school.com", phone: "123-456-7890" },
+        //     maths: { name: "Ms. Johnson", email: "johnson@school.com", phone: "987-654-3210" },
+        //     art: { name: "Mrs. Lee", email: "lee@school.com", phone: "456-789-1234" },
+        //     social: { name: "Mr. Brown", email: "brown@school.com", phone: "321-654-9870" },
+        //     hindi: { name: "Ms. Verma", email: "verma@school.com", phone: "654-321-0987" },
+        //     english: { name: "Mrs. Green", email: "green@school.com", phone: "789-012-3456" },
+        //     sports: { name: "Mr. Adams", email: "adams@school.com", phone: "012-345-6789" },
+        //     projects: { name: "Ms. Clark", email: "clark@school.com", phone: "111-222-3333" }
+        // };
+
+        // Get all the subject cells
+        const subjects = document.querySelectorAll("td");
+
+            subjects.forEach(function (subject) {
+                subject.addEventListener("click", function () {
+                    const subjectId = this.id; // Use 'this.id' to refer to the clicked element's ID
+                    localStorage.setItem('subject', JSON.stringify(subjectId)); // Store subject ID in localStorage 
+                    window.location.href = "details.html"; // Redirect to the details page
+                });
+            });
+
+    </script>
+</body>
+
+</html>

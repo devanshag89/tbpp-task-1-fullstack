@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Information</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="details" id="teacherInfo"></div>
+</body>
+<script>
+    const teacherDetails = {
+        science: { name: "Mr. Smith", email: "smith@school.com", phone: "123-456-7890" },
+        maths: { name: "Ms. Johnson", email: "johnson@school.com", phone: "987-654-3210" },
+        art: { name: "Mrs. Lee", email: "lee@school.com", phone: "456-789-1234" },
+        social: { name: "Mr. Brown", email: "brown@school.com", phone: "321-654-9870" },
+        hindi: { name: "Ms. Verma", email: "verma@school.com", phone: "654-321-0987" },
+        english: { name: "Mrs. Green", email: "green@school.com", phone: "789-012-3456" },
+        sports: { name: "Mr. Adams", email: "adams@school.com", phone: "012-345-6789" },
+        projects: { name: "Ms. Clark", email: "clark@school.com", phone: "111-222-3333" }
+    };
+
+    const storedSubjectId = JSON.parse(localStorage.getItem('subject'));
+
+    if (storedSubjectId && teacherDetails[storedSubjectId]) {
+        const teacher = teacherDetails[storedSubjectId];
+        const teacherInfoDiv = document.getElementById('teacherInfo');
+        
+        teacherInfoDiv.innerHTML = `
+            <h2>Teacher Information</h2>
+            <p><strong>Name:</strong> ${teacher.name}</p>
+            <p><strong>Email:</strong> ${teacher.email}</p>
+            <p><strong>Phone:</strong> ${teacher.phone}</p>
+        `;
+    } else {
+        console.error('No teacher found for the given subject ID.');
+    }
+</script>
+</html>

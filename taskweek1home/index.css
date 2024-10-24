@@ -1,0 +1,84 @@
+.tablediv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+table {
+    border-collapse: separate;
+    border-spacing: 2px; 
+    width: 700px;
+    height: 400px;
+}
+td {
+    background-color: #fa7440;
+    border: 1px solid #fa7440;
+    font-weight: 300; 
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: #f14500; 
+    cursor: pointer; 
+}
+
+thead th {
+    background-color: #c84057;
+    border-color: #c84057;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+
+tbody th{
+    background-color: #6677e5;
+    border-color: #6677e5;
+    padding: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#teacherInfo {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #555;
+}
+
+strong {
+    color: #222;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    #teacherInfo {
+        width: 90%;
+    }
+}
